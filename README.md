@@ -19,7 +19,7 @@ npm run build
 
 The site is configured for the repository `Zarky2001/yanzhao.github.io` and the project-page URL:
 
-`https://zarky2001.github.io/yanzhao.github.io/`
+https://zarky2001.github.io/yanzhao.github.io/
 
 After adding the Git remote, deploy with:
 
