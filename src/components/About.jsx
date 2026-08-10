@@ -1,4 +1,5 @@
 import React from "react";
+import { MdPushPin } from "react-icons/md";
 import "../css/All.css";
 
 function About() {
@@ -11,17 +12,16 @@ function About() {
                 <br /><br />
                 I received my academic master&apos;s degree in <strong>Computer Application Technology</strong>{" "}
                 from Minnan Normal University, where I was advised by <a
-    href="https://fhqxa.github.io/"
-    target="_blank"
-    rel="noopener noreferrer"
->
-    Prof. Hong Zhao
-</a>, and my bachelor&apos;s
+                    href="https://fhqxa.github.io/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >Prof. Hong Zhao</a>, and my bachelor&apos;s
                 degree in <strong>Software Engineering</strong> from the School of Information Engineering,
                 Hangzhou Dianzi University.
                 <br /><br />
                 <div className="callout">
-                    My research interests include chain-of-thought reasoning, multimodal reasoning, and long-tailed image classification.
+                    <MdPushPin className="callout-pin" aria-hidden="true" />
+                    <span>My research interests include chain-of-thought reasoning, multimodal reasoning, and long-tailed image classification.</span>
                 </div>
             </div>
         </div>

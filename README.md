@@ -1,7 +1,6 @@
 # Zarky Academic Homepage
 
 Personal academic homepage for Zarky (赵妍), a Ph.D. student working on chain-of-thought reasoning, multimodal reasoning, and long-tailed image classification.
-https://zarky2001.github.io/yanzhao.github.io/
 
 ## Local development
 

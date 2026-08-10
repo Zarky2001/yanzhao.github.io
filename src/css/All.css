@@ -16,13 +16,25 @@ strong {
 
 .callout {
     position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
     margin-top: 1.75rem;
-    padding: 1.25rem 1.35rem;
+    padding: 1.25rem 3.2rem 1.25rem 1.35rem;
     overflow: hidden;
     color: #174f82;
     background: linear-gradient(135deg, rgba(0, 113, 227, 0.1), rgba(255, 255, 255, 0.72));
     border: 1px solid rgba(0, 113, 227, 0.2);
     border-radius: 18px;
+}
+
+.callout-pin {
+    position: absolute;
+    top: 0.95rem;
+    right: 1rem;
+    color: var(--blue-bright);
+    font-size: 1.35rem;
+    transform: rotate(14deg);
 }
 
 .callout::before {
@@ -134,12 +146,27 @@ strong {
 }
 
 .education-item {
+    display: flex;
+    align-items: center;
+    gap: 1.15rem;
     padding: 1.2rem 1.25rem;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 18px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
     transition: background 180ms ease, border-color 180ms ease;
+}
+
+.education-logo {
+    width: 58px;
+    height: 58px;
+    flex: 0 0 58px;
+    object-fit: contain;
+}
+
+.education-content {
+    min-width: 0;
+    flex: 1;
 }
 
 .education-item:hover {

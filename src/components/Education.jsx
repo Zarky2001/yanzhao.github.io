@@ -1,6 +1,8 @@
 import React from "react";
 import "../css/All.css";
 
+const schoolAsset = (filename) => `${import.meta.env.BASE_URL}schools/${filename}`;
+
 export default function Education() {
     const education = [
         {
@@ -9,6 +11,7 @@ export default function Education() {
             period: "2026 - Present",
             location: "Hefei, China",
             advisor: "Prof. Xueliang Liu",
+            logo: schoolAsset("hfut.png"),
         },
         {
             university: "Minnan Normal University",
@@ -16,6 +19,7 @@ export default function Education() {
             period: "2023 - 2026",
             location: "Zhangzhou, China",
             advisor: "Prof. Hong Zhao",
+            logo: schoolAsset("mnnu.png"),
         },
         {
             university: "School of Information Engineering, Hangzhou Dianzi University",
@@ -23,6 +27,7 @@ export default function Education() {
             period: "2019 - 2023",
             location: "Hangzhou, China",
             advisor: null,
+            logo: schoolAsset("hdu-ie.png"),
         },
     ];
 
@@ -32,16 +37,21 @@ export default function Education() {
             <div className="education-list">
                 {education.map((edu) => (
                     <div key={edu.university} className="education-item">
-                        <div className="education-header">
-                            <h3 className="education-university">{edu.university}</h3>
-                            <div className="education-period">
-                                {edu.period}
-                                <div className="education-location">{edu.location}</div>
+                        {edu.logo && (
+                            <img className="education-logo" src={edu.logo} alt={`${edu.university} logo`} />
+                        )}
+                        <div className="education-content">
+                            <div className="education-header">
+                                <h3 className="education-university">{edu.university}</h3>
+                                <div className="education-period">
+                                    {edu.period}
+                                    <div className="education-location">{edu.location}</div>
+                                </div>
                             </div>
-                        </div>
-                        <div className="education-details">
-                            <p className="education-degree">{edu.degree}</p>
-                            {edu.advisor && <p className="education-advisor">Advisor: {edu.advisor}</p>}
+                            <div className="education-details">
+                                <p className="education-degree">{edu.degree}</p>
+                                {edu.advisor && <p className="education-advisor">Advisor: {edu.advisor}</p>}
+                            </div>
                         </div>
                     </div>
                 ))}
