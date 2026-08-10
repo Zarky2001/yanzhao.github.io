@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "../css/Header.css";
 
+const brandLogo = `${import.meta.env.BASE_URL}brand/zarky-girl-blue.png`;
+
 const NAV = [
     { id: "about", label: "About" },
     { id: "news", label: "News" },
@@ -22,7 +24,7 @@ export default function Header() {
         <header className={`header-wrapper ${menuOpen ? "menu-open" : ""}`}>
             <div className="header-container">
                 <button className="header-brand" type="button" onClick={() => handleClick("about")} aria-label="Back to top">
-                    <span className="brand-mark" aria-hidden="true">ZY</span>
+                    <img className="brand-logo" src={brandLogo} alt="" aria-hidden="true" />
                     <span className="brand-wordmark">Zarky</span>
                     <span className="brand-divider" aria-hidden="true" />
                     <span className="brand-cn">赵妍</span>
