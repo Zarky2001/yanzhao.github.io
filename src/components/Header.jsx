@@ -21,9 +21,12 @@ export default function Header() {
     return (
         <header className={`header-wrapper ${menuOpen ? "menu-open" : ""}`}>
             <div className="header-container">
-                <div className="header-name">
-                    <div className="name-main">Zarky · 赵妍</div>
-                </div>
+                <button className="header-brand" type="button" onClick={() => handleClick("about")} aria-label="Back to top">
+                    <span className="brand-mark" aria-hidden="true">ZY</span>
+                    <span className="brand-wordmark">Zarky</span>
+                    <span className="brand-divider" aria-hidden="true" />
+                    <span className="brand-cn">赵妍</span>
+                </button>
 
                 {/* 汉堡按钮 */}
                 <button

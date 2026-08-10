@@ -41,7 +41,7 @@ const publications = [
         abstract: "Existing transfer-learning methods leverage auxiliary information to improve tail-class generalization, but they cannot fully exploit the relationships between auxiliary information and tail classes and may introduce irrelevant knowledge. We propose a hierarchical CNN with knowledge complementation that treats hierarchical relationships as auxiliary information and transfers relevant knowledge to tail classes. Semantic and clustering relationships are integrated into the CNN as hierarchical knowledge to guide feature learning. A complementary strategy jointly exploits both forms of knowledge: semantic knowledge provides prior dependence, while clustering knowledge reduces negative information caused by excessive semantic dependence. This complementary use of hierarchical relationships transfers useful knowledge to tail data and improves long-tailed classification accuracy. Experiments on public benchmarks show that the proposed model outperforms existing methods, including a 3.46% accuracy improvement over the second-best method on long-tailed tieredImageNet.",
         links: [
             { label: "Paper", url: "https://dl.acm.org/doi/full/10.1145/3653717" },
-            { label: "Code", url: "https://github.com/fhqxa/lzy_HCKC" },
+            { label: "Code", url: "https://github.com/fhqxa/lzy_HCKC4" },
         ],
     },
 ];

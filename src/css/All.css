@@ -21,7 +21,7 @@ strong {
     gap: 0.8rem;
     margin-top: 1.75rem;
     padding: 1.25rem 3.2rem 1.25rem 1.35rem;
-    overflow: hidden;
+    overflow: visible;
     color: #174f82;
     background: linear-gradient(135deg, rgba(0, 113, 227, 0.1), rgba(255, 255, 255, 0.72));
     border: 1px solid rgba(0, 113, 227, 0.2);
@@ -30,11 +30,14 @@ strong {
 
 .callout-pin {
     position: absolute;
-    top: 0.95rem;
-    right: 1rem;
+    top: -0.95rem;
+    right: 0.75rem;
+    z-index: 2;
     color: var(--blue-bright);
-    font-size: 1.35rem;
-    transform: rotate(14deg);
+    font-size: 1.55rem;
+    line-height: 1;
+    filter: drop-shadow(0 3px 3px rgba(37, 136, 204, 0.25));
+    transform: rotate(-7deg);
 }
 
 .callout::before {
