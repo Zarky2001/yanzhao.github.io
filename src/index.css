@@ -1,0 +1,51 @@
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  color: #1d1d1f;
+  background: #f5f5f7;
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --bg: #eef1f4;
+  --surface: #ffffff;
+  --surface-raised: #f8fafc;
+  --surface-soft: #f1f4f7;
+  --text: #172033;
+  --text-secondary: #465269;
+  --text-tertiary: #8a94a3;
+  --blue: #3b9ddd;
+  --blue-bright: #2588cc;
+  --blue-soft: rgba(59, 157, 221, 0.1);
+  --border: rgba(0, 0, 0, 0.08);
+  --border-strong: rgba(0, 0, 0, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.7), transparent 35%),
+    radial-gradient(circle at 85% 82%, rgba(110, 130, 150, 0.07), transparent 34rem),
+    var(--bg);
+}
+
+button,
+a {
+  font: inherit;
+}
+
+::selection {
+  color: #fff;
+  background: rgba(0, 113, 227, 0.72);
+}
