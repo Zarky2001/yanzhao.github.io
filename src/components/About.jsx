@@ -10,7 +10,13 @@ function About() {
                 advised by Prof. Xueliang Liu.
                 <br /><br />
                 I received my academic master&apos;s degree in <strong>Computer Application Technology</strong>{" "}
-                from Minnan Normal University, where I was advised by Prof. Hong Zhao, and my bachelor&apos;s
+                from Minnan Normal University, where I was advised by <a
+    href="https://fhqxa.github.io/"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    Prof. Hong Zhao
+</a>, and my bachelor&apos;s
                 degree in <strong>Software Engineering</strong> from the School of Information Engineering,
                 Hangzhou Dianzi University.
                 <br /><br />
