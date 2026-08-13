@@ -43,6 +43,14 @@ function Hero() {
                             <MdEmail />
                         </a>
                         <a
+                            href="mailto:2026010132@mail.hfut.edu.cn"
+                            className="icon-link"
+                            aria-label="Email Zarky"
+                            title="2026010132@mail.hfut.edu.cn"
+                        >
+                            <MdEmail />
+                        </a>
+                        <a
                             href="mailto:g2023062010@stu.mnnu.edu.cn"
                             className="icon-link previous-email"
                             aria-label="Former email address at Minnan Normal University"
