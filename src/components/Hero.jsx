@@ -77,11 +77,11 @@ function Hero() {
                         <a
                             href="mailto:g2023062010@stu.mnnu.edu.cn"
                             className="icon-link previous-email"
-                            aria-label="Former Academic Email"
-                            title="Former Academic Email: g2023062010@stu.mnnu.edu.cn"
-                        >
-                            <MdHistoryEdu />
-                        </a>
+                            aria-label="Former email address at Minnan Normal University"
+                            title="Former email: g2023062010@stu.mnnu.edu.cn"
+                            >
+                            <MdEmail />
+                            </a>
 
                         {/* ORCID */}
                         <a
