@@ -1,6 +1,11 @@
 import React from "react";
 import "../css/Hero.css";
-import { MdEmail, MdLocationOn } from "react-icons/md";
+import {
+    MdEmail,
+    MdLocationOn,
+    MdSchool,
+    MdHistoryEdu
+} from "react-icons/md";
 import { SiOrcid } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 
@@ -8,21 +13,33 @@ function Hero() {
     return (
         <div className="hero-grid">
             <div className="hero-left">
-                <div className="profile-placeholder" aria-label="Zarky profile placeholder">
+                <div
+                    className="profile-placeholder"
+                    aria-label="Zarky profile placeholder"
+                >
                     ZY
                 </div>
+
                 <div className="hero-meta">
-                    <div className="meta-name">Zarky · 赵妍</div>
-                    <div className="meta-title">Ph.D. Student in Computer Science</div>
+                    <div className="meta-name">
+                        Zarky · 赵妍
+                    </div>
+
+                    <div className="meta-title">
+                        Ph.D. Student in Computer Science
+                    </div>
+
                     <div className="current-location">
                         <MdLocationOn aria-hidden="true" />
                         <span>Hefei, China</span>
                     </div>
+
                     <div className="meta-description">
                         <div>Chain-of-Thought Reasoning</div>
                         <div>Multimodal Reasoning</div>
                         <div>Long-Tailed Image Classification</div>
                     </div>
+
                     <div className="contact-small">
                         {/* GitHub */}
                         <a
@@ -35,17 +52,17 @@ function Hero() {
                         >
                             <FaGithub />
                         </a>
-                    
-                        {/* Academic Email */}
+
+                        {/* Academic Email - HFUT */}
                         <a
                             href="mailto:2026010132@mail.hfut.edu.cn"
                             className="icon-link academic-email"
                             aria-label="Academic Email"
                             title="Academic Email: 2026010132@mail.hfut.edu.cn"
                         >
-                            <MdEmail />
+                            <MdSchool />
                         </a>
-                    
+
                         {/* Personal Email */}
                         <a
                             href="mailto:zhaoyan_2001cn@163.com"
@@ -55,17 +72,17 @@ function Hero() {
                         >
                             <MdEmail />
                         </a>
-                    
-                        {/* Former Academic Email */}
+
+                        {/* Former Academic Email - MNNU */}
                         <a
                             href="mailto:g2023062010@stu.mnnu.edu.cn"
                             className="icon-link previous-email"
                             aria-label="Former Academic Email"
                             title="Former Academic Email: g2023062010@stu.mnnu.edu.cn"
                         >
-                            <MdEmail />
+                            <MdHistoryEdu />
                         </a>
-                    
+
                         {/* ORCID */}
                         <a
                             href="https://orcid.org/0009-0001-2295-7570"
@@ -78,8 +95,14 @@ function Hero() {
                             <SiOrcid />
                         </a>
                     </div>
-                    <div className="small-text">Additional social profiles and CV will be added later.</div>
-                    <div className="small-text">Last updated: August 2026</div>
+
+                    <div className="small-text">
+                        Additional social profiles and CV will be added later.
+                    </div>
+
+                    <div className="small-text">
+                        Last updated: August 2026
+                    </div>
                 </div>
             </div>
         </div>
