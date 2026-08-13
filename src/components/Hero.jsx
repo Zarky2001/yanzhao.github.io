@@ -24,6 +24,7 @@ function Hero() {
                         <div>Long-Tailed Image Classification</div>
                     </div>
                     <div className="contact-small">
+                        {/* GitHub */}
                         <a
                             href="https://github.com/Zarky2001"
                             className="icon-link github-link"
@@ -34,30 +35,38 @@ function Hero() {
                         >
                             <FaGithub />
                         </a>
-                        <a
-                            href="mailto:zhaoyan_2001cn@163.com"
-                            className="icon-link"
-                            aria-label="Email Zarky"
-                            title="zhaoyan_2001cn@163.com"
-                        >
-                            <MdEmail />
-                        </a>
+                    
+                        {/* Academic Email */}
                         <a
                             href="mailto:2026010132@mail.hfut.edu.cn"
-                            className="icon-link"
-                            aria-label="Email Zarky"
-                            title="2026010132@mail.hfut.edu.cn"
+                            className="icon-link academic-email"
+                            aria-label="Academic Email"
+                            title="Academic Email: 2026010132@mail.hfut.edu.cn"
                         >
                             <MdEmail />
                         </a>
+                    
+                        {/* Personal Email */}
+                        <a
+                            href="mailto:zhaoyan_2001cn@163.com"
+                            className="icon-link personal-email"
+                            aria-label="Personal Email"
+                            title="Personal Email: zhaoyan_2001cn@163.com"
+                        >
+                            <MdEmail />
+                        </a>
+                    
+                        {/* Former Academic Email */}
                         <a
                             href="mailto:g2023062010@stu.mnnu.edu.cn"
                             className="icon-link previous-email"
-                            aria-label="Former email address at Minnan Normal University"
-                            title="Former email: g2023062010@stu.mnnu.edu.cn"
+                            aria-label="Former Academic Email"
+                            title="Former Academic Email: g2023062010@stu.mnnu.edu.cn"
                         >
                             <MdEmail />
                         </a>
+                    
+                        {/* ORCID */}
                         <a
                             href="https://orcid.org/0009-0001-2295-7570"
                             className="icon-link orcid-link"
