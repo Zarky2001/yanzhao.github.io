@@ -3,6 +3,12 @@ import "../css/All.css";
 
 function News() {
     const news = [
+       {
+            time: "2026.09",
+            content: <>
+                🎉Our paper <a href="#mmki" className="news-ref">“Multi-Scale and Multi-Level Knowledge Integration for Long-Tailed Classification”</a> was accepted by <strong>Information Sciences (INS)</strong>.
+            </>,
+        },
         {
             time: "2025.01",
             content: <>
