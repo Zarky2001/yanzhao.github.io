@@ -7,6 +7,25 @@ const publicationAsset = (filename) => `${import.meta.env.BASE_URL}publications/
 
 const publications = [
     {
+        id: "mmki",
+        title: "Multi-Scale and Multi-Level Knowledge Integration for Long-Tailed Classification",
+        authors: (
+    <>
+        Yanli Li, <strong>Yan Zhao</strong>, Hong Zhao*
+    </>
+),
+        venue: "Information Sciences (INS), 2026",
+        venueType: "journal",
+        tags: ["Long-Tailed Image Classification", "Knowledge Transfer"],
+        marker: "MMKI",
+        image: publicationAsset("mmki.png"),
+        abstract: "Real-world data typically exhibit long-tailed distributions, in which tail classes are significantly underrepresented relative to head classes. Knowledge transfer (KT) is widely used to mitigate the effects of class imbalance by exploiting correlations among classes. However, most KT-based methods are designed from the perspective of global features and overlook local feature relationships among classes during KT, limiting their effectiveness when class correlations are globally sparse. To address this limitation, the present study proposes the multiscale and multilevel knowledge integration (MMKI) framework, which explores class correlations from multiple dimensions. First, spatially-aware multiscale feature refinement (SMS) is proposed to mine fine-grained class correlations by aligning primitive-level features. SMS captures class correlations at the local feature level, enabling the modeling of subtle relationships that are difficult to capture using global features. Subsequently, depth-aware multilevel feature distillation (DML) is developed to bidirectionally align shallow and deep predictive distributions. By leveraging information across different network depths, DML integrates complementary information for tail classes. Experiments on four long-tailed datasets demonstrate the effectiveness of MMKI, including a 4.1% improvement in tail accuracy on CIFAR-100-LT.",
+        links: [
+            { label: "Paper", url: "" },
+            { label: "Code", url: "https://github.com/fhqxa/mmki" },
+        ],
+    },
+    {
         id: "dpa-ei",
         title: "DPA-EI: Long-Tailed Classification by Dual Progressive Augmentation from Explicit and Implicit Perspectives",
         authors: (
