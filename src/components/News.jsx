@@ -3,6 +3,12 @@ import "../css/All.css";
 
 function News() {
     const news = [
+        {
+            time: "2026.10",
+            content: <>
+                🎉Our paper <a href="#dfdf" className="news-ref">“Dynamic Joint Learning Framework with Dual-Task Feature Fusion for Medical Image Classification”</a> was accepted by <strong>Applied Soft Computing (ASOC)</strong>.
+            </>,
+        },
        {
             time: "2026.09",
             content: <>
