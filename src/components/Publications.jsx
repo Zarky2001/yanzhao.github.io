@@ -8,7 +8,7 @@ const publicationAsset = (filename) => `${import.meta.env.BASE_URL}publications/
 const publications = [
     {
         id: "dpal",
-        title: "Dual-Pathway Adaptation with Logit Calibration for Long-Tailed Classification",
+        title: "DPAL-Calib Dual-Pathway Adaptation with Logit Calibration for Long-Tailed Classification",
         authors: (
     <>
         Can Fang, Yanli Li, Wencheng Lin, <strong>Yan Zhao</strong>, Hong Zhao*
