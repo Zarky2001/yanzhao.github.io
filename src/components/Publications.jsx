@@ -7,6 +7,25 @@ const publicationAsset = (filename) => `${import.meta.env.BASE_URL}publications/
 
 const publications = [
     {
+        id: "dpal",
+        title: "Dual-Pathway Adaptation with Logit Calibration for Long-Tailed Classification",
+        authors: (
+    <>
+        Can Fang, Yanli Li, Wencheng Lin, <strong>Yan Zhao</strong>, Hong Zhao*
+    </>
+),
+        venue: "Information Sciences (INS), 2026",
+        venueType: "journal",
+        tags: ["Long-tailed classification", "Imbalanced data", "Representation bias", "Bias calibration", "Dual-pathway adaptation"],
+        marker: "DPAL-Calib",
+        image: publicationAsset("DPAL-Calib.png"),
+        abstract: "Long-tailed classification aims to develop models that generalize effectively across imbalanced data distributions. In recent years, vision-language models have shown promising performance in long-tailed classification through adaptive strategies. However, two significant challenges remain. Existing methods often exhibit excessive bias toward head classes, limiting generalization to tail classes, whereas aggressive adaptation to tail classes may distort pre-trained knowledge and degrade overall performance. To address these challenges, a unified adaptation framework based on dual-pathway adaptation with logit calibration (DPAL-Calib) is proposed. DPAL-Calib consists of a semantic-aware dual-pathway adaptation (SDP) module and a biasaware logit calibration (BLC) module. The SDP module incorporates a preservation pathway to retain pre-trained vision-language semantics and an adaptation pathway controlled by a dynamic router to extract and enrich tail-class representations. The BLC module mitigates decision bias by leveraging logits from a frozen reference model to correct distorted routing predictions, thereby promoting balanced guidance and reducing the misclassification of tail samples. The proposed framework improves tail-class performance by 4%–6% over the compared baselines while maintaining competitive overall performance across multiple long-tailed datasets. Code is available at https://github.com/fhqxa/DPAL.
+        links: [
+            { label: "Paper", url: "" },
+            { label: "Code", url: "https://github.com/fhqxa/DPAL" },
+        ],
+    },
+    {
         id: "dfdf",
         title: "Dynamic Joint Learning Framework with Dual-Task Feature Fusion for Medical Image Classification",
         authors: (
@@ -22,7 +41,7 @@ const publications = [
         abstract: "Medical image classification facilitates the advancement of computer-aided clinical diagnosis by modeling complex anatomical structures and their spatial relationships. Recent studies have typically adopted a two-stage approach in which regions of interest are first segmented, followed by the extraction of relevant features for disease classification. However, existing two-stage methods are susceptible to error propagation, whereby segmentation errors directly impair classification accuracy. In this paper, we propose a dynamic joint learning framework with dual-task feature fusion (DFDF) that leverages information from two complementary tasks to enhance diagnostic performance in clinical disease classification. First, the dual-task feature fusion module integrates region-aware and pixel-level features via a multi-granularity feature fusion strategy, thereby providing more comprehensive and discriminative information for image classification. Second, the dynamic joint learning strategy enhances overall classification accuracy by initially emphasizing segmentation to establish spatial awareness and subsequently focusing on classification for refined decision-making. Finally, the dual-backbone architecture of DFDF enables one-stage prediction, thereby avoiding error propagation between segmentation and classification. Exper-imental results demonstrate that DFDF outperforms recent methods by incorporating segmentation as an auxiliary task across four public benchmarks. Specifically, DFDF achieves classification accuracy gains of up to 2.18-10.55% on ISIC2018, Kvasir, COVID-19 CT, and COVID-19 CXR.",
         links: [
             { label: "Paper", url: "" },
-            { label: "Code", url: "https://github.com/fhqxa/mmki" },
+            { label: "Code", url: "https://github.com/fhqxa/dfdf" },
         ],
     },
     {
